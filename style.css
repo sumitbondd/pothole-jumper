@@ -1,7 +1,19 @@
 html, body {
-  margin: 0;
-  padding: 0;
+  margin: 0;          /* Remove default browser margins */
+  padding: 0;         /* Remove default browser padding */
+  width: 100%;        /* Ensure they take full width */
+  height: 100%;       /* Ensure they take full height */
+  display: flex;      /* Use flexbox to easily center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  overflow: hidden;   /* Hide scrollbars if canvas is slightly too big */
+  background-color: #222; /* Optional: Add a background color around the canvas */
 }
+
 canvas {
-  display: block;
+  display: block;     /* Treat the canvas as a block element */
+  /* margin: auto; /* Not needed when using flexbox on body */
+  /* Optional: Add a border or shadow for visual distinction */
+  /* border: 1px solid black; */
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.5); */
 }
